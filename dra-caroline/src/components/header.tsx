@@ -1,4 +1,4 @@
-"use client"; // Obrigatório no Next.js quando usamos useState ou eventos de clique
+"use client"; 
 
 import { useState } from "react";
 import Image from "next/image";
@@ -22,7 +22,7 @@ export default function Header() {
           <div className="flex justify-between items-center h-20">
             
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <a href="#inicio" className="flex items-center">
                 <Image 
                   src="/logo.svg" 
@@ -40,7 +40,7 @@ export default function Header() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-[#273617] hover:text-[#5F6C37] font-medium transition-colors"
+                  className="text-[#783E19] hover:text-[#b05e2a] font-medium transition-colors"
                 >
                   {link.name}
                 </a>
@@ -48,7 +48,7 @@ export default function Header() {
               {/* Botão de WhatsApp no Header Desktop */}
               <a
                 href="#contato" // Depois você troca pelo link do WhatsApp real
-                className="bg-[#5F6C37] text-white px-6 py-2.5 rounded-[10px] font-semibold hover:bg-[#4a5429] transition shadow-md"
+                className="bg-[#783E19] text-white px-6 py-2.5 rounded-[10px] font-semibold hover:bg-[#b05e2a] transition shadow-md"
               >
                 Agendar
               </a>
@@ -58,7 +58,7 @@ export default function Header() {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(true)}
-                className="text-slate-800 focus:outline-none p-2"
+                className="text-[#783E19] focus:outline-none p-2"
               >
                 <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -84,7 +84,7 @@ export default function Header() {
         }`}
       >
         <div className="p-5 flex justify-end border-b border-slate-100">
-          <button onClick={() => setIsOpen(false)} className="text-slate-500 hover:text-slate-800 p-2">
+          <button onClick={() => setIsOpen(false)} className="text-[#783E19] hover:text-[#b05e2a] p-2">
             {/* Ícone de Fechar (X) */}
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -92,13 +92,13 @@ export default function Header() {
           </button>
         </div>
 
-        <nav className="flex flex-col p-6 space-y-6 flex-grow">
+        <nav className="flex flex-col p-6 space-y-6 grow">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)} // Fecha o menu ao clicar no link
-              className="text-lg font-medium text-slate-700 hover:text-blue-600"
+              className="text-lg font-medium text-[#783E19] hover:text-[#b05e2a]"
             >
               {link.name}
             </a>
@@ -110,7 +110,7 @@ export default function Header() {
           <a
             href="#contato"
             onClick={() => setIsOpen(false)}
-            className="flex justify-center w-full bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+            className="flex justify-center w-full bg-[#783E19] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b05e2a] transition"
           >
             Agendar Consulta
           </a>
