@@ -10,7 +10,7 @@ description: "Investigação completa de sintomas de refluxo, queimação e dor 
 },
 {
 title: "Gastrite e Dispepsia",
-description: "Avaliação clínica e orientação para controle de dor, estufamento e desconforto após refeições.",
+description: "Avaliação clínica e orientação para controle de dor, estufamento e desconforto após refeições.Avaliação clínica e orientação para controle de dor, estufamento e desconforto após refeiçõesAvaliação clínica e orientação para controle de dor, estufamento e desconforto após refeiçõesAvaliação clínica e orientação para controle de dor, estufamento e desconforto após refeiçõesAvaliação clínica e orientação para controle de dor, estufamento e desconforto após ref",
 },
 {
 title: "Intestino Irritável",

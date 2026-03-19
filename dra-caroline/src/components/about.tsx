@@ -14,12 +14,8 @@ export default function aboutSection({
   paragraphs,
 }: aboutSectionProps) {
   return (
-    <section id="sobre" className="bg-[#e9dece] px-6 py-14 sm:px-8 lg:px-50 lg:py-20">
-      <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[420px_1fr] lg:gap-14">
-        <div className="relative min-h-75 overflow-hidden rounded-[30px] shadow-sm lg:min-h-130">
-          <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />
-        </div>
-
+    <section id="sobre" className="bg-[#E9DAC7] px-6 py-14 sm:px-8 lg:px-50 lg:py-20">
+      <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1fr_420px] lg:gap-14">
         <div className="max-w-xl text-[#7e3f16]">
           <h2 className="text-3xl font-semibold leading-tight lg:text-5xl">{title}</h2>
 
@@ -28,6 +24,9 @@ export default function aboutSection({
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
+        </div>
+                <div className="relative min-h-75 overflow-hidden rounded-[30px] shadow-sm lg:min-h-130">
+          <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />
         </div>
       </div>
     </section>
