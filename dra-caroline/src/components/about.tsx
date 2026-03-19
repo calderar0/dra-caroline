@@ -1,20 +1,20 @@
 import Image from "next/image";
 
-type DigestiveSectionProps = {
+type aboutSectionProps = {
   imageSrc: string;
   imageAlt: string;
   title: string;
   paragraphs: string[];
 };
 
-export default function DigestiveSection({
+export default function aboutSection({
   imageSrc,
   imageAlt,
   title,
   paragraphs,
-}: DigestiveSectionProps) {
+}: aboutSectionProps) {
   return (
-    <section id="sobre" className="bg-[#E9DAC7] px-6 py-14 sm:px-8 lg:px-50 lg:py-20">
+    <section id="sobre" className="bg-[#e9dece] px-6 py-14 sm:px-8 lg:px-50 lg:py-20">
       <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[420px_1fr] lg:gap-14">
         <div className="relative min-h-75 overflow-hidden rounded-[30px] shadow-sm lg:min-h-130">
           <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />

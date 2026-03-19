@@ -1,5 +1,6 @@
 import HeroSection from "@/components/heroSection";
 import DigestiveSection from "@/components/digestiveSection";
+import ServicesSection from "@/components/servicesSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
           "Nao normalize o desconforto. Se voce busca equilibrio, clareza e um plano terapeutico personalizado para retomar a sua qualidade de vida, voce esta no lugar certo.",
         ]}
       />
+
+      <ServicesSection />
 
       <a
         href="#contato"
