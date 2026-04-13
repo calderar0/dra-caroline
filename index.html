@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Tomas - Gastroenterologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'playfair': ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        'brand-bg': '#E4D5C7', // Fundo bege principal
+                        'brand-hero': '#B5957C', // Marrom claro do hero
+                        'brand-dark': '#4A3320', // Texto escuro
+                        'brand-button': '#754B35', // Botão marrom escuro
+                        'brand-card': '#FAF6F0', // Fundo dos cards
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-dark font-poppins antialiased overflow-x-hidden">
+
+    <nav class="bg-brand-hero w-full z-50 transition-all duration-300 sticky top-0 shadow-md">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center max-w-7xl">
+            <a href="#" class="flex items-center gap-2 text-white">
+                <i class="fa-solid fa-leaf text-2xl"></i>
+                <div class="flex flex-col">
+                    <span class="font-playfair text-xl font-bold leading-tight">Caroline Tomas</span>
+                    <span class="text-[10px] tracking-widest uppercase font-light">gastroenterologia e hepatologia</span>
+                </div>
+            </a>
+
+            <button id="menu-btn" class="text-white md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <div class="hidden md:flex space-x-8 items-center text-sm">
+                <a href="#" class="text-white font-medium hover:text-brand-dark transition-colors">Início</a>
+                <a href="#sobre" class="text-white font-medium hover:text-brand-dark transition-colors">Sobre mim</a>
+                <a href="#contato" class="text-white font-medium hover:text-brand-dark transition-colors">Contato</a>
+                <a href="#servicos" class="text-white font-medium hover:text-brand-dark transition-colors">Serviços</a>
+                <a href="#" class="bg-brand-button text-white px-6 py-2 rounded-full font-medium hover:bg-brand-dark transition-all">
+                    Agendar
+                </a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-hero px-6 py-4 space-y-4 shadow-lg">
+            <a href="#" class="block text-white font-medium">Início</a>
+            <a href="#sobre" class="block text-white font-medium">Sobre mim</a>
+            <a href="#contato" class="block text-white font-medium">Contato</a>
+            <a href="#servicos" class="block text-white font-medium">Serviços</a>
+            <a href="#" class="block bg-brand-button text-white text-center py-2 rounded-full font-medium">Agendar</a>
+        </div>
+    </nav>
+
+    <section class="bg-brand-hero text-white pt-10 pb-20 px-6 lg:pt-0 lg:pb-0 relative">
+        <div class="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center">
+            
+            <div class="lg:w-1/2 space-y-6 z-10 py-12 lg:py-32 pr-0 lg:pr-12">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-playfair font-semibold leading-tight">
+                    We boost <br>growth for your<br>statup business
+                </h1>
+                <p class="font-light text-lg max-w-md opacity-90">
+                    Our post a low in the heart of creativity with the nature of a digital creator is not a small constraint.
+                </p>
+                <div class="pt-4">
+                    <a href="#" class="inline-block bg-white text-brand-hero px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-md">
+                        Agendar
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0 relative h-full">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dra. Caroline Tomas" class="w-full max-w-md object-cover rounded-t-full border-b-0 border-white/20 shadow-2xl z-10 relative mt-10 lg:mt-24">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 relative">
+        <div class="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-16">
+            
+            <div class="lg:w-1/2 w-full relative">
+                <img src="https://images.unsplash.com/photo-1526424564240-61d02c8427f7?auto=format&fit=crop&w=600&q=80" alt="Saúde Digestiva" class="w-full rounded-[40px] shadow-xl object-cover h-[500px]">
+            </div>
+
+            <div class="lg:w-1/2 space-y-6">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark leading-tight">
+                    Sua saúde digestiva<br>é a base do seu bem-estar.
+                </h2>
+                
+                <div class="space-y-4 text-brand-dark/80 font-light leading-relaxed">
+                    <p>Você sente que seus problemas estomacais afetam a sua rotina e você não consegue resolver?</p>
+                    <p class="font-medium text-brand-dark">Cansaço persistente, alterações no ritmo intestinal, dores abdominais constantes e inchaço, estão entre os muitos sintomas de uma saúde digestiva que precisa de cuidado.</p>
+                    <p>Com a Dra. Caroline, você terá um acompanhamento gastroenterológico e hepatológico humanizado. Uma médica que busca entender a causa dos seus sintomas, tratando a pessoa que tem uma doença, e não a doença que tem na pessoa.</p>
+                    <p>Se você busca equilíbrio, clareza e uma vida de bem-estar com o seu corpo, e com a sua saúde, você está no lugar certo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <a href="https://wa.me/5599999999999" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <section class="py-16 px-6 relative" id="servicos">
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none text-[400px]">
+             <i class="fa-solid fa-stomach"></i>
+        </div>
+
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark mb-12">O que trato?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6" id="sobre">
+        <div class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16">
+            
+            <div class="lg:w-1/2 space-y-6">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark mb-8">Quem eu sou?</h2>
+                
+                <div class="space-y-4 text-brand-dark/80 font-light leading-relaxed">
+                    <p class="font-medium text-brand-dark">Você sente que seus problemas estomacais afetam a sua rotina e você não consegue resolver?</p>
+                    <p>Cansaço persistente, alterações no ritmo intestinal, dores abdominais constantes e inchaço, estão entre os muitos sintomas de uma saúde digestiva que precisa de cuidado.</p>
+                    <p>Com a Dra. Caroline, você terá um atendimento humanizado, uma médica que busca entender a causa dos seus problemas, diagnosticando a pessoa que tem uma doença, ou não apenas a doença de uma pessoa.</p>
+                    <p>Se você busca equilíbrio e uma rotina de bem-estar para a sua vida, para o seu corpo e para sua saúde, você está no lugar certo.</p>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 w-full">
+                <img src="https://images.unsplash.com/photo-1594824436998-058b231b630e?auto=format&fit=crop&w=600&q=80" alt="Dra. Caroline" class="w-full rounded-[40px] shadow-xl object-cover h-[500px]">
+            </div>
+
+        </div>
+    </section>
+<!-- Depoimentos -->
+ <!--
+    <section class="py-16 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark mb-12">Depoimentos</h2>
+            
+            <div class="flex overflow-x-auto pb-8 gap-6 snap-x hide-scrollbar">
+                <div class="bg-brand-card p-8 rounded-3xl min-w-[320px] max-w-[350px] flex-shrink-0 snap-start shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-[#D4AF37] mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-sm font-light text-brand-dark/80 italic mb-6">"Excelente profissional, muito atenciosa. Explicou tudo detalhadamente e me passou muita confiança. Recomendo de olhos fechados!"</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <span class="font-medium text-sm">Camila Mendes</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card p-8 rounded-3xl min-w-[320px] max-w-[350px] flex-shrink-0 snap-start shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-[#D4AF37] mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-sm font-light text-brand-dark/80 italic mb-6">"A Dra. Caroline mudou minha qualidade de vida. Há anos sofria com dores e ela finalmente resolveu meu problema com muita empatia."</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <span class="font-medium text-sm">Juliana Silva</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card p-8 rounded-3xl min-w-[320px] max-w-[350px] flex-shrink-0 snap-start shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-[#D4AF37] mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-sm font-light text-brand-dark/80 italic mb-6">"Atendimento impecável! O consultório é lindo e acolhedor, e a Dra. é simplesmente maravilhosa, super competente e humana."</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <span class="font-medium text-sm">Amanda Costa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="py-24 px-6 relative">
+        <div class="container mx-auto max-w-5xl flex flex-col lg:flex-row items-center gap-16 relative z-10">
+            
+            <div class="lg:w-5/12 w-full">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Consultório" class="w-full rounded-[40px] shadow-xl object-cover h-[500px]">
+            </div>
+
+            <div class="lg:w-7/12 space-y-8">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark leading-tight">
+                    Não deixe o equilíbrio da sua saúde digestiva para depois.
+                </h2>
+                
+                <div class="space-y-4 text-brand-dark/80 font-light text-lg">
+                    <p>Sua saúde é a base, e o seu corpo não pode esperar.</p>
+                    <p>O cuidado preventivo é o caminho mais seguro para garantir bem-estar e qualidade de vida a longo prazo.</p>
+                    <p>Estamos prontos para oferecer o atendimento atencioso, humano e qualificado que sua saúde digestiva merece.</p>
+                    <p class="font-medium text-brand-dark">Agende sua avaliação agora mesmo e cuide da sua saúde.</p>
+                </div>
+
+                <div class="pt-4">
+                    <a href="#" class="inline-block bg-brand-button text-white px-10 py-4 rounded-xl font-medium hover:bg-brand-dark transition-all shadow-md">
+                        Comece a se cuidar agora
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-20 pointer-events-none">
+             <i class="fa-solid fa-tree text-6xl text-brand-dark"></i>
+        </div>
+    </section>
+
+    <div class="border-t border-brand-dark/10 py-6 px-6 text-brand-dark font-light text-sm" id="contato">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span>(00) 0000-0000</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="far fa-envelope text-lg"></i>
+                <span>contato@email.com</span>
+            </div>
+            <div class="flex items-center gap-2 text-center md:text-left">
+                <i class="fas fa-map-marker-alt text-lg"></i>
+                <span>Av. Exemplo, 1000 - Bairro, Cidade - Estado</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#D8C7B5] py-4 text-center text-xs font-light text-brand-dark/80 px-6">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row justify-between items-center gap-2">
+            <p>Dra Caroline Tomas - Copyright © 2026 Todos os direitos reservados</p>
+            <p>Feito por Be For You Digital Solutions</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Esconder a barra de rolagem horizontal da seção de depoimentos, mas mantê-la rolável */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+    <script>
+        // Menu Mobile Toggle
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // O "- 80" evita que o header cubra o conteúdo
+                            behavior: 'smooth'
+                        });
+                        
+                        // Fecha o menu mobile se estiver aberto (opcional)
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
