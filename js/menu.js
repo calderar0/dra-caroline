@@ -4,6 +4,9 @@
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+            const expanded = !menu.classList.contains('hidden');
+            btn.setAttribute('aria-expanded', String(expanded));
+            menu.setAttribute('aria-hidden', String(!expanded));
         });
 
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -23,6 +26,8 @@
                         const mobileMenu = document.getElementById('mobile-menu');
                         if (!mobileMenu.classList.contains('hidden')) {
                             mobileMenu.classList.add('hidden');
+                            btn.setAttribute('aria-expanded', 'false');
+                            mobileMenu.setAttribute('aria-hidden', 'true');
                         }
                     }
                 });

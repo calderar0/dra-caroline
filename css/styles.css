@@ -20,6 +20,29 @@
     align-self: flex-start;
 }
 
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: 0.75rem;
+    transform: translateY(-200%);
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    border-radius: 9999px;
+    background: #4A3320;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #1f2937;
+    outline-offset: 3px;
+}
+
 @media (max-width: 1024px) {
     #hero-section .hero-content {
         margin-left: 2rem;

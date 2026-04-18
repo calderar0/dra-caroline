@@ -7,7 +7,7 @@
                     },
                     colors: {
                         'brand-bg': '#E4D5C7', // Fundo bege principal
-                        'brand-hero': '#B5957C', // Marrom claro do hero
+                        'brand-hero': '#7B5A44', // Marrom mais escuro para melhorar contraste
                         'brand-dark': '#4A3320', // Texto escuro
                         'brand-button': '#754B35', // Botão marrom escuro
                         'brand-card': '#FAF6F0', // Fundo dos cards
