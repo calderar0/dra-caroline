@@ -1,0 +1,82 @@
+#hero-section {
+    --hero-bg-y: 18%;
+    --hero-tree-offset: -1.3px;
+    --hero-tree-mobile-offset: -1.3px;
+}
+
+#hero-section {
+    background-image: url("../assets/hero\ \(2\).png");
+    background-size: cover;
+    background-position: center var(--hero-bg-y);
+    background-repeat: no-repeat;
+}
+
+#hero-section .hero-tree {
+    bottom: var(--hero-tree-offset);
+}
+
+#hero-section .hero-content {
+    text-align: left;
+    align-self: flex-start;
+}
+
+@media (max-width: 1024px) {
+    #hero-section .hero-content {
+        margin-left: 2rem;
+    }
+}
+
+.section-apresentacao img,
+#sobre img,
+#cta-final img {
+    object-position: center 24%;
+}
+
+.section-stack {
+    padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+    .section-stack {
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-section {
+        min-height: 92vh;
+        --hero-bg-y: 20%;
+        background-position: 80% var(--hero-bg-y);
+    }
+
+    #hero-section .hero-tree {
+        bottom: var(--hero-tree-mobile-offset);
+    }
+
+    #hero-section > .container > div:first-child {
+        margin-top: 20rem;
+    }
+
+    #hero-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(74, 51, 32, 0.72) 0%, rgba(74, 51, 32, 0.42) 55%, rgba(74, 51, 32, 0.22) 100%);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    #hero-section h1,
+    #hero-section p {
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    }
+}
+
+        /* Esconder a barra de rolagem horizontal da seção de depoimentos, mas mantê-la rolável */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

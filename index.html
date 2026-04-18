@@ -11,25 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/icone-marrom.svg" media="(prefers-color-scheme: light)" type="image/x-icon">
     <link rel="icon" href="assets/icone-branco.svg" media="(prefers-color-scheme: dark)" type="image/x-icon">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                        'playfair': ['"Playfair Display"', 'serif'],
-                    },
-                    colors: {
-                        'brand-bg': '#E4D5C7', // Fundo bege principal
-                        'brand-hero': '#B5957C', // Marrom claro do hero
-                        'brand-dark': '#4A3320', // Texto escuro
-                        'brand-button': '#754B35', // Botão marrom escuro
-                        'brand-card': '#FAF6F0', // Fundo dos cards
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
 <body class="bg-brand-bg text-brand-dark font-poppins antialiased overflow-x-hidden">
 
@@ -52,8 +35,8 @@
             <div class="hidden md:flex space-x-8 items-center text-sm">
                 <a href="#hero-section" class="text-white font-medium hover:text-brand-dark transition-colors">Início</a>
                 <a href="#sobre" class="text-white font-medium hover:text-brand-dark transition-colors">Sobre mim</a>
-                <a href="#contato" class="text-white font-medium hover:text-brand-dark transition-colors">Contato</a>
                 <a href="#servicos" class="text-white font-medium hover:text-brand-dark transition-colors">Serviços</a>
+                <a href="#contato" class="text-white font-medium hover:text-brand-dark transition-colors">Contato</a>
                 <a href="#" class="bg-brand-button text-white px-6 py-2 rounded-full font-medium hover:bg-brand-dark transition-all">
                     Agendar
                 </a>
@@ -63,8 +46,8 @@
         <div id="mobile-menu" class="hidden md:hidden bg-brand-hero px-6 py-4 space-y-4 shadow-lg">
             <a href="#" class="block text-white font-medium">Início</a>
             <a href="#sobre" class="block text-white font-medium">Sobre mim</a>
-            <a href="#contato" class="block text-white font-medium">Contato</a>
             <a href="#servicos" class="block text-white font-medium">Serviços</a>
+            <a href="#contato" class="block text-white font-medium">Contato</a>
             <a href="#" class="block bg-brand-button text-white text-center py-2 rounded-full font-medium">Agendar</a>
         </div>
     </nav>
@@ -72,14 +55,14 @@
     <!-- Hero Section -->
 
     <section class="bg-brand-hero text-white pt-10 pb-20 px-6 lg:pt-0 lg:pb-0 relative overflow-hidden" id="hero-section">
-        <div class="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center">
+        <div class="container mx-auto max-w-7xl flex flex-col lg:flex-row items-start lg:items-center">
             
-            <div class="lg:w-1/2 space-y-6 z-10 py-12 lg:py-32 pr-0 lg:pr-12">
+            <div class="hero-content w-full lg:w-1/2 space-y-6 z-10 py-12 lg:py-32 pr-0 lg:pr-12 text-left">
                 <h1 class="text-5xl md:text-6xl lg:text-7xl font-playfair font-semibold leading-tight">
-                    We boost <br>growth for your<br>statup business
+                    Cuidado focado <br>na sua saúde<br>digestiva
                 </h1>
-                <p class="font-light text-lg max-w-md opacity-90">
-                    Our post a low in the heart of creativity with the nature of a digital creator is not a small constraint.
+                <p class="font-light text-lg max-w-lg opacity-90">
+                    Acompanhamento humanizado em Gastroenterologia e Hepatologia, unindo escuta atenta, acolhimento e medicina baseada em evidências científicas.
                 </p>
                 <div class="pt-4">
                     <a href="#" class="inline-block bg-white text-brand-hero px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-md">
@@ -87,28 +70,33 @@
                     </a>
                 </div>
             </div>
+
+        </div>
+
+        <div aria-hidden="true" class="hero-tree pointer-events-none absolute left-1/2 w-screen -translate-x-1/2 z-[1]">
+            <img src="assets/arvore.svg" alt="logotipo de árvore posicionada na seção inicial da página, é uma árvore desenhada no estilo 'lineart'" class="block w-full h-auto max-w-none">
         </div>
     </section>
 
     <!-- Seção de Apresentação -->
 
-    <section class="py-24 px-6 relative">
+    <section class="section-stack section-apresentacao py-16 px-6 relative">
         <div class="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-16">
             
-            <div class="lg:w-1/2 w-full relative">
+            <div class="order-2 lg:order-1 lg:w-1/2 w-full relative">
                 <img src="assets/Dor digestiva.jpg" alt="Imagem com uma mulher vestindo roupas de ginástica com as mãos na barriga representando dor digestiva" class="w-full rounded-[40px] shadow-xl object-cover h-[500px]">
             </div>
 
-            <div class="lg:w-1/2 space-y-6">
+            <div class="order-1 lg:order-2 lg:w-1/2 space-y-6">
                 <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark leading-tight">
                     Sua saúde digestiva<br>é a base do seu bem-estar.
                 </h2>
                 
                 <div class="space-y-4 text-brand-dark/80 font-light leading-relaxed">
-                    <p>Você sente que seus problemas estomacais afetam a sua rotina e você não consegue resolver?</p>
-                    <p class="font-medium text-brand-dark">Cansaço persistente, alterações no ritmo intestinal, dores abdominais constantes e inchaço, estão entre os muitos sintomas de uma saúde digestiva que precisa de cuidado.</p>
-                    <p>Com a Dra. Caroline, você terá um acompanhamento gastroenterológico e hepatológico humanizado. Uma médica que busca entender a causa dos seus sintomas, tratando a pessoa que tem uma doença, e não a doença que tem na pessoa.</p>
-                    <p>Se você busca equilíbrio, clareza e uma vida de bem-estar com o seu corpo, e com a sua saúde, você está no lugar certo.</p>
+                    <p>Você sente que seus problemas estomacais ou intestinais afetam a sua rotina e você não consegue resolver?</p>
+                    <p class="font-medium text-brand-dark">Refluxo, dor abdominal, constipação, diarreia e alterações no fígado estão entre os muitos sinais de uma saúde digestiva que precisa de cuidado especializado.</p>
+                    <p>Meu objetivo é ir além do diagnóstico. É escutar você com atenção, explicar seu quadro de forma clara e construir junto com você um plano de tratamento baseado nas melhores evidências científicas.</p>
+                    <p>Se você busca um cuidado individualizado e um acompanhamento próximo para se sentir seguro e confiante, você está no lugar certo.</p>
                 </div>
             </div>
         </div>
@@ -120,21 +108,21 @@
 
     <!-- Sobre a Dra. -->
 
-    <section class="py-24 px-6" id="sobre">
-        <div class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16">
+    <section class="section-stack pb-16 px-6" id="sobre">
+        <div class="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-16">
             
-            <div class="lg:w-1/2 space-y-6">
+            <div class="order-1 lg:order-1 lg:w-1/2 space-y-6">
                 <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark mb-8">Quem eu sou?</h2>
                 
                 <div class="space-y-4 text-brand-dark/80 font-light leading-relaxed">
-                    <p class="font-medium text-brand-dark">Você sente que seus problemas estomacais afetam a sua rotina e você não consegue resolver?</p>
-                    <p>Cansaço persistente, alterações no ritmo intestinal, dores abdominais constantes e inchaço, estão entre os muitos sintomas de uma saúde digestiva que precisa de cuidado.</p>
-                    <p>Com a Dra. Caroline, você terá um atendimento humanizado, uma médica que busca entender a causa dos seus problemas, diagnosticando a pessoa que tem uma doença, ou não apenas a doença de uma pessoa.</p>
-                    <p>Se você busca equilíbrio e uma rotina de bem-estar para a sua vida, para o seu corpo e para sua saúde, você está no lugar certo.</p>
+                    <p class="font-medium text-brand-dark">Sou a Dra. Caroline Tomas, médica dedicada à gastroenterologia, hepatologia e clínica médica.</p>
+                    <p>Acredito que o verdadeiro cuidado em saúde começa com uma relação de confiança. Meu foco é cuidar da sua saúde digestiva de maneira integral, enxergando você como um todo, e não apenas os seus sintomas.</p>
+                    <p>Ofereço um atendimento centrado no paciente. Isso significa que cada etapa do seu tratamento será conduzida de forma individualizada, combinando acolhimento humano com o rigor da ciência.</p>
+                    <p>Trabalho diariamente para que você recupere o seu equilíbrio, a sua clareza e uma vida de bem-estar com o seu corpo.</p>
                 </div>
             </div>
 
-            <div class="lg:w-1/2 w-full">
+            <div class="order-2 lg:order-2 lg:w-1/2 w-full">
                 <img src="assets/Dra Caroline Tomas.jpg" alt="Foto profissional da Doutora Caroline Tomas. A Doutora é uma mulher branca de cabelos castanhos escuros e olhos claros, está sentada em uma poltrona, vestindo roupas brancas e está com um sorriso acolhedor enquanto olha para o lado." class="w-full rounded-[40px] shadow-xl object-cover h-[500px]">
             </div>
 
@@ -143,38 +131,38 @@
 
        <!-- Seção de Serviços -->
 
-    <section class="py-16 px-6 relative" id="servicos">
+<section class="section-stack pb-16 px-6 relative" id="servicos">
         <div class="absolute left-0 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none text-[400px]">
              <i class="fa-solid fa-stomach"></i>
         </div>
 
         <div class="container mx-auto max-w-6xl relative z-10">
-            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark mb-12">O que trato?</h2>
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark mb-12">O que eu trato?</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
-                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Gastrite</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Avaliação e tratamento para inflamações no estômago que causam dor, queimação e empachamento, buscando sempre o alívio sustentável dos sintomas.</p>
                 </div>
                 <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
-                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Refluxo</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Controle da azia e do retorno do ácido gástrico com condutas cientificamente comprovadas, devolvendo o seu conforto ao se alimentar e dormir.</p>
                 </div>
                 <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
-                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Constipação</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Investigação atenta das causas da dificuldade ou alterações no ritmo intestinal, construindo um plano de tratamento para o reequilíbrio do seu corpo.</p>
                 </div>
                 <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
-                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Gordura no Fígado</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Acompanhamento e manejo da esteatose hepática, prevenindo a progressão da doença de forma humanizada e focada em mudanças efetivas de estilo de vida.</p>
                 </div>
                 <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
-                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Hepatites Virais</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Diagnóstico, tratamento e monitoramento de infecções que afetam o fígado, oferecendo todo o suporte técnico e emocional que o paciente necessita.</p>
                 </div>
                 <div class="bg-brand-card p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Implantes</h3>
-                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="text-xl font-bold font-playfair mb-4 text-brand-button">Cirrose Hepática</h3>
+                    <p class="text-sm font-light text-brand-dark/70 leading-relaxed">Cuidado contínuo e especializado para proteger a função do fígado, tratar complicações e garantir a melhor qualidade de vida possível em cada estágio.</p>
                 </div>
             </div>
         </div>
@@ -234,14 +222,22 @@
         </div>
     </section>
 -->
-    <section class="py-24 px-6 relative">
+
+    <!-- Chamada para ação final -->
+    <section class="section-stack pb-20 px-6 relative overflow-hidden" id="cta-final">
         <div class="container mx-auto max-w-5xl flex flex-col lg:flex-row items-center gap-16 relative z-10">
             
-            <div class="lg:w-5/12 w-full">
+            <div class="order-2 lg:order-1 lg:w-5/12 w-full">
                 <img src="assets/Dra Caroline Tomas 2.jpg" alt="Fotografia da Dra. Caroline Heringer em um consultório. Ela é uma mulher branca de cabelos castanhos ondulados, sorrindo para a câmera. Veste um conjunto azul marinho com risca de giz branca e detalhes estruturados nos ombros. O fundo é composto por um painel de madeira com iluminação vertical suave e uma mesa de escritório ao fundo." class="w-full rounded-[40px] shadow-xl object-cover h-[500px]">
             </div>
 
-            <div class="lg:w-7/12 space-y-8">
+            <div class="order-3 lg:hidden pt-2 w-full text-center">
+                <a href="#" class="inline-block bg-brand-button text-white px-10 py-4 rounded-xl font-medium hover:bg-brand-dark transition-all shadow-md">
+                    Comece a se cuidar agora
+                </a>
+            </div>
+
+            <div class="order-1 lg:order-2 lg:w-7/12 space-y-8">
                 <h2 class="text-4xl md:text-5xl font-playfair font-bold text-brand-dark leading-tight">
                     Não deixe o equilíbrio da sua saúde digestiva para depois.
                 </h2>
@@ -253,15 +249,15 @@
                     <p class="font-medium text-brand-dark">Agende sua avaliação agora mesmo e cuide da sua saúde.</p>
                 </div>
 
-                <div class="pt-4">
+                <div class="pt-4 hidden lg:block">
                     <a href="#" class="inline-block bg-brand-button text-white px-10 py-4 rounded-xl font-medium hover:bg-brand-dark transition-all shadow-md">
                         Comece a se cuidar agora
                     </a>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-10 right-10 opacity-20 pointer-events-none">
-             <i class="fa-solid fa-tree text-6xl text-brand-dark"></i>
+        <div aria-hidden="true" class="cta-tree pointer-events-none absolute bottom-0 left-1/2 w-screen -translate-x-1/2 z-[1]">
+            <img src="assets/arvore.svg" alt="logotipo de árvore posicionada na seção inicial da página, é uma árvore desenhada no estilo 'lineart'" class="block w-full h-auto max-w-none">
         </div>
     </section>
 
@@ -269,15 +265,15 @@
         <div class="container mx-auto max-w-6xl flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-2">
                 <i class="fab fa-whatsapp text-lg"></i>
-                <span>(00) 0000-0000</span>
+                <span>(11) 98772-2479</span>
             </div>
             <div class="flex items-center gap-2">
                 <i class="far fa-envelope text-lg"></i>
-                <span>contato@email.com</span>
+                <span>dracarolinegastro@gmail.com</span>
             </div>
             <div class="flex items-center gap-2 text-center md:text-left">
                 <i class="fas fa-map-marker-alt text-lg"></i>
-                <span>Av. Exemplo, 1000 - Bairro, Cidade - Estado</span>
+                <span>São Paulo - SP / Teleconsultas</span>
             </div>
         </div>
     </div>
@@ -288,62 +284,6 @@
             <p>Feito por Be For You Digital Solutions</p>
         </div>
     </footer>
-
-    <style>
-        #hero-section {
-            background-image: url("assets/hero%20(2).png");
-            background-size: cover;
-            background-position: center 18%;
-            background-repeat: no-repeat;
-        }
-
-        @media (max-width: 768px) {
-            #hero-section {
-                min-height: 72vh;
-                background-position: 80% 20%;
-            }
-        }
-
-        /* Esconder a barra de rolagem horizontal da seção de depoimentos, mas mantê-la rolável */
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
-
-    <script>
-        // Menu Mobile Toggle
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80, // O "- 80" evita que o header cubra o conteúdo
-                            behavior: 'smooth'
-                        });
-                        
-                        // Fecha o menu mobile se estiver aberto (opcional)
-                        const mobileMenu = document.getElementById('mobile-menu');
-                        if (!mobileMenu.classList.contains('hidden')) {
-                            mobileMenu.classList.add('hidden');
-                        }
-                    }
-                });
-            });
-    </script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
